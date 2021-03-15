@@ -1,48 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   --color-bg: #fff;
 }
-/*body.dark-theme{
-    --color-bg:rgb(12, 12, 12);
-    --color-texto:#0fa5d3;
-    --color-icons:#FFFFFF;
-    --color-nav:rgb(blue);
-    --color-ntex:#FFFFFF;
-}*/
 
-nav {
-  background-color: var(--color-nav);
-  position: sticky;
-  top: 0;
+.navbar{
+  background-color: var(--color-nav); 
+  padding-left:20px; 
+  position: sticky; 
+  top: 0; 
   z-index: 1;
+  font-weight: bold;
 }
 
 nav > ul {
-  color: var(--color-nav);
-
   max-width: 1140px;
   margin: auto;
   padding: 20px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-li {
-  list-style: none;
-  padding: 10px 15px;
-}
-
-.item_nav {
-  color: var(--color-ntex);
-  font-size: 20px;
-  letter-spacing: -0.35px;
-  text-decoration: none;
-}
-
-.item_nav:hover {
-  color: #0fa5d3;
-  transition: 0.15s ease-out;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -56,10 +38,10 @@ li {
   }
 
   body.light-theme {
-    --color-bg: #fff;
+    --color-bg: rgb(216, 216, 216);
     --color-texto: #0fa5d3;
     --color-icons: #000;
-    --color-nav: rgb(255, 255, 255);
+    --color-nav: rgb(216, 216, 216);
     --color-ntex: #000000;
     --color-bbg: #1b1313;
   }
@@ -68,12 +50,39 @@ li {
 body {
   background-color: var(--color-bg);
 }
-
 h1 {
+  width: 100%;
   color: var(--color-icons);
   text-align: center;
-  margin-top: -440px;
-  font-size: 60px;
+  margin-top: 140px;
+  font-size: 50px;
+}
+
+#text0{
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px 15px;
+  margin: 20px 0 30px 0;
+}
+
+.contenedor-col {
+  color: var(--color-icons);
+  /*background-color: #30364c;*/
+  border-radius: 8px;
+  margin: 15px 0;
+  padding: 20px;
+}
+.contenedor-col > p {
+  /* text-align: center; */
+  margin: 0;
+}
+
+#icons {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 6px;
 }
 
 #text0 {
@@ -104,12 +113,19 @@ h1 {
   margin-top: -10px;
   font-size: 16px;
 }
-
 #btnMO {
   color: var(--color-bbg);
-  margin-top: 180px;
+  margin-top: -180px;
   font-size: 26px;
   margin-left: 130px;
+}
+
+.soy {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-texto);
+  font-size: 32px;
+  padding-top: 4px;
+  text-align: center;
 }
 
 .fa-html5 {
@@ -132,63 +148,58 @@ h1 {
   color: rgb(122, 0, 153);
 }
 
-#icons {
-  text-align: center;
-  font-size: 40px;
-  letter-spacing: 6px;
-}
-
-.soy {
-  font-family: "Poppins", sans-serif;
+.projects-title {
   color: var(--color-texto);
   font-size: 32px;
-  padding-top: 4px;
-  text-align: center;
-}
-
-.project__img {
-  margin-top: 20px;
-  width: 100%;
-  border-radius: 8px;
-}
-
-.col-6-p {
-  width: 50%;
-  padding-right: 5px;
-  padding-left: 45px;
-}
-
-.col-12-p {
-  width: 50%;
-  padding-right: 5px;
-  padding-left: 695px;
-  margin-top: -518px;
-}
-
-.col-1-p {
-  width: 50%;
-  padding-right: 5px;
-  padding-left: 695px;
-  margin-top: -528px;
-}
-
-.contenedor-col {
-  color: var(--color-icons);
-  /*background-color: #30364c;*/
-  border-radius: 8px;
-  margin: 15px 0;
-  padding: 20px;
-}
-.contenedor-col > p {
-  /* text-align: center; */
+  font-weight: 700;
   margin: 0;
+  padding: 10px 0;
+  display: inline-block;
+  letter-spacing: -0.025em;
 }
 
+.row-project {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
 
-/*#social{
-  background-color: #30364c;
+.card {
+  border-radius: 0;
+  border: none;
+  flex-grow: 1;
+  background-color: var(--color-bg);
+  box-shadow: 0px 0px 8px #242323;
+}
+.card-image img {
+  width: 100%;
+  object-fit: cover;
+}
+.card-body {
+  padding: 1.25rem;
+}
 
-}*/
+.projectname {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: var(--color-texto);
+
+}
+.projectdes{
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: -0.35px;
+  color: var(--color-icons);
+
+}
+
+.card-footer {
+  background: #FFFFFF;
+  padding: 0 1.25rem 1.25rem;
+  border-top: none;
+}
 
 .csocial {
   display: flex;

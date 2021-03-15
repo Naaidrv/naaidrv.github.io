@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/a1b7114887.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="img/nrv.ico">
-    <title>NaaidRV</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/a1b7114887.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/nrv.ico">
+  <title>NaaidRV | Bienvenid@!</title>
 </head>
-    <body>
-        <!--Barra de Navegación-->
-        <nav class="navbar">
-            <ul>
-                 <li><a class="item_nav" href="">Inicio</a></li>
-                 <li><a class="item_nav" href="#about">¿Quién soy?</a></li>
-                 <li><a class="item_nav" href="#works">Proyectos</a></li>
-                 <li><a class="item_nav" href="#social">Contacto</a></li>
-                 <li><a class="item_nav" href="img/CV.pdf" download="CV.pdf">Descarga Mi CV</a></li>
+<body>
 
-            </ul>
-         </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <!--<a class="navbar-brand" href="#">NaaidRV</a>-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" style="color: #0fa5d3" aria-current="page" href="#about">¿Quién soy?</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: #0fa5d3" href="#works">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: #0fa5d3" href="#social">Contacto</a></li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-success" type="submit">Descarga mi CV</button>
+        </form>
+      </div>
+    </div>
+  </nav>      
 
-        <!--Imagen de inicio-->
-         <header id="inicio">
-        <img src="img/BNRV.png" alt=""  style="width: 100%;">
-        <h1 class="animate__animated animate__fadeInDown">¡Hola! Soy NaaidRV</h1><br>
-        <strong><p id="text0" class="animate__animated animate__fadeInUp">Full Stack Developer Jr. 💻</p></strong> 
-         </header>
-            <!--<i class="fab fa-github"></i>
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fas fa-envelope"></i>
-        
-        <!--Botón light-theme/Dark-theme-->
-        <div title="Cambiar tema" id="but">
-        <i class="fas fa-sun" id="btnMO"></i>
-        </div>
-        <br><br><br><br><br><br><br><br><br><br>
+    <!--<img src="img/BNRV.png" alt=""  style="width: 100%;">-->
+    <br><br><br><br><br>
+  <div class="container">
+    <h1 class="animate__animated animate__fadeInDown">¡Hola! Soy NaaidRV</h1><br>
+    <strong><p id="text0" class="animate__animated animate__fadeInUp">Full Stack Developer Jr. 💻</p></strong> 
+  </div>
+
+    <!--Botón light-theme/Dark-theme-->
+    <div title="Cambiar tema" id="but">
+      <i class="fas fa-sun" id="btnMO"></i>
+      </div>
+  <br><br><br><br><br><br><br><br>
         <!--Bloque ¿Quién soy?-->
-        <div id="about" style="padding-top:180px;">
+        <div id="about" style="padding-top:260px;">
           <h3 class="soy">Acerca de mi</h3>
           <div class="contenedor-col">
                   <p id="text1">Cuento con experiencia como <strong>Front End Developer</strong> y <br>
@@ -57,68 +63,88 @@
                 <p id="text3">
             Amante de la música, diseño, programación, comida, fútbol y los perritos.</p></div>
         </div><br><br><br><br><br>
-
-        <!--Bloque de trabajos-->
-        <div id="works">
-            <h2 class="soy">Proyectos</h2>
-            <div class="row" style="width:90%; margin-top:5px;">
-              <div class="col-6-p">
-                <div class="contenedor-col">
-                  <h3>PC Service & Restore</h3>
-                  <p> Diseño del hosting y login para un café internet de manera responsiva utilizando tenologías como
-                    <strong>HTML, CSS, PHP</strong>
-                  </p>
-                  <img class="project__img" src="img/proy1.JPG" alt=""></div>
-              </div>
-              <br>
-              <div class="col-12-p">
-                <div class="contenedor-col">
-                  <h3>Diplomado (ADDSWN)- FESC</h3>
-                  <p>Vídeo introductorio para los estudiantes del diplomado <strong>"Análisis, diseño y desarrollo de sitios web en los negocios"</strong></p>
-                  <img class="project__img" src="img/proy3.gif" alt="" height="280px;"></div><br>
-              </div>
-
-              <div class="col-6-p">
-                <div class="contenedor-col">
-                  <h3>Consultorio Médico Pediátrico</h3>
-                  <p>Página para consultorio pediátrico, agilizando el registro de consultas, horarios y especializaciones</p>
-                  <img class="project__img" src="img/proy2.JPG" alt=""></div>
-              </div>
-              <br><br>
-              <div class="col-1-p">
-                <div class="contenedor-col">
-                  <h3>Ciudad Virtual</h3>
-                  <p>Vídeo del 8vo. Congreso de Informática de la FESC 
-                    donde se da a conocer <strong>"Ciudad Virtual"</strong> una plataforma para la comunidad UNAM
-
-                  </p>
-                  <img class="project__img" src="img/proy4.gif"alt="" height="266px;"></div>
-              </div>
+        <!--Bloque de proyectos-->
+        <div class="container">
+        <section class="row pt-4 mb-4" id="works">
+        <div class="col-12 mb-4">
+          <h2 class="projects-title">
+            Proyectos
+          </h2>
+        </div>
+        <div class="col-12 col-md-6 mb-3 d-flex">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/proy1.JPG" alt="Pc Service&Restore">
+            </div>
+            <div class="card-body">
+              <p class="projectname">PC Service & Restore</p>
+              <p class="projectdes">Diseño del hosting y login para un café internet de manera responsiva utilizando tenologías como
+                <strong>HTML, CSS, PHP</strong>
+              </p>
             </div>
           </div>
-          <br><br>
-          <!--Bloque de Contacto-->
-          <div id="social">
-              <h2 class="soy">Contacto</h2>
-          
-
-          <div class="contact">
-          <div class="col-24-p">
-            <div class="csocial">
-            <a title="Envíame un correo 📧😄" class="footer__link" href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><i class="fas fa-envelope"></i></a>
-            <a title="Sigue mis proyectos 🚧✔️" class="footer__link" href="https://github.com/Naaidrv" target="_blank"><i class="fab fa-github"></i></a>
-            <a title="Envíame un Telegram!✈️✌️" class="footer__link" href="https://t.me/NaaidRV" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-            <a title="Perfil profesional👔😎" class="footer__link" href="https://linkedin.com/in/nadiariv" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+  
+        <div class="col-12 col-md-6 mb-3 d-flex">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/proy2.JPG" alt="Consultorio Médico Pediátrico">
+            </div>
+            <div class="card-body">
+              <p class="projectname">Consultorio Médico Pediátrico</p>
+              <p class="projectdes">Página para consultorio pediátrico, agilizando el registro de consultas, horarios y especializaciones.</p>
             </div>
           </div>
         </div>
 
-          <footer>
-            <p>Si te gusta mi trabajo y te interesa ¡Contactame!</p>
-          </footer>
+        <div class="col-12 col-md-6 mb-3 d-flex">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/proy3.gif" alt="Diplomado Análisis, diseño y desarrollo de sitios web en los negocios">
+            </div>
+            <div class="card-body">
+              <p class="projectname">Vídeo - Diplomado (ADDSWN)</p>
+              <p class="projectdes">Vídeo introductorio para los estudiantes del diplomado <strong>"Análisis, diseño y desarrollo de sitios web en los negocios"</strong></p>
+            </div>
+          </div>
         </div>
-        <!--Script de cambio Light-theme/Dark-theme-->
-        <!--<i class="fas fa-moon"></i>-->
-    <script src="js/App.js"></script>
+
+        <div class="col-12 col-md-6 mb-3 d-flex">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/proy4.gif" alt="Ciudad Virtual">
+            </div>
+            <div class="card-body">
+              <p class="projectname">Vídeo - Ciudad Virtual</p>
+              <p class="projectdes">Vídeo del 8vo. Congreso de Informática de la FESC 
+                donde se da a conocer <strong>"Ciudad Virtual"</strong> una plataforma para la comunidad UNAM.</p>
+            </div>
+          </div>
+        </div>
+</section>
+</div>
+
+<br><br><br><br><br>
+ <!--Bloque de Contacto-->
+ <div id="social">
+  <h2 class="soy">Contacto</h2>
+<div class="contact">
+<div class="col-24-p">
+<div class="csocial">
+<a title="Envíame un correo 📧😄" class="footer__link" href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><i class="fas fa-envelope"></i></a>
+<a title="Sigue mis proyectos 🚧✔️" class="footer__link" href="https://github.com/Naaidrv" target="_blank"><i class="fab fa-github"></i></a>
+<a title="Envíame un Telegram!✈️✌️" class="footer__link" href="https://t.me/NaaidRV" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+<a title="Perfil profesional👔😎" class="footer__link" href="https://linkedin.com/in/nadiariv" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+</div>
+</div>
+</div>
+
+<footer>
+<p>Si te gusta mi trabajo y te interesa ¡Contactame!</p>
+</footer>
+</div>
+<script src="js/App.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
 </body>
 </html>
