@@ -293,3 +293,13 @@ footer > p {
     margin-left: 25px;
   }
 }
+
+body::-webkit-scrollbar{
+  width: 10px;
+  background: #0c0c0c;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: rgba(255,255,255, .3);
+  border-radius: 10px;
+}
