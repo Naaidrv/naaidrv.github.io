@@ -36,7 +36,15 @@ nav > ul {
     --color-ntex: #ffffff;
     --color-bbg: yellow;
   }
-
+  body::-webkit-scrollbar{
+    width: 10px;
+    background: #0c0c0c;
+  }
+  
+  body::-webkit-scrollbar-thumb{
+    background: rgba(255,255,255, .3);
+    border-radius: 10px;
+  }
   body.light-theme {
     --color-bg: rgb(216, 216, 216);
     --color-texto: #0fa5d3;
@@ -132,6 +140,9 @@ h1 {
 .soy {
   font-family: "Poppins", sans-serif;
   color: var(--color-texto);
+ /*background: linear-gradient(to bottom right, #0fa5d3, rgb(15, 13, 99));
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;*/ 
   font-size: 32px;
   padding-top: 4px;
   text-align: center;
@@ -292,14 +303,4 @@ footer > p {
   .contact{
     margin-left: 25px;
   }
-}
-
-body::-webkit-scrollbar{
-  width: 10px;
-  background: #0c0c0c;
-}
-
-body::-webkit-scrollbar-thumb{
-  background: rgba(255,255,255, .3);
-  border-radius: 10px;
 }
