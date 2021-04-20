@@ -63,3 +63,9 @@ $(document).ready(function(){
         }
     });
 });
+
+window.addEventListener('load', () => {
+    const conload = document.querySelector('.conload')
+    conload.style.opacity = 0
+    conload.style.visibility = 'hidden'
+})
