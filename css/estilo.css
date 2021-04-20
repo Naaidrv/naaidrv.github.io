@@ -489,6 +489,88 @@ section .title::after{
     }
 }
 
+@media (max-width: 425px){
+    #icons{
+        font-size: 40px;
+    }
+   .works .title::after{
+            color:#0fa5d3;
+            background: #111;
+            font-size: 14px;
+        }
+    .box .projectdes{
+        font-size: 18px;
+    }
+    footer > p{
+        margin-top: -95px;
+        font-size: 15px;
+    }
+    .csocial{
+        padding-top: 20px;
+        font-size: 35px;
+        padding-left: 30px;
+    }
+    .start .start-content #text-1{
+        font-size: 22px;
+        /*font-weight: 600;*/
+        margin-left: -3px;
+    }
+    .start .start-content #text-2{
+        font-size: 70px;
+        /*font-weight: 600;*/
+        margin-left: -3px;
+    }
+    .start .start-content #text-3{
+        font-size: 34px;
+        /*font-weight: 600;*/
+        margin-left: -3px;
+    }
+    .about .max-width .title, h2{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 375px){
+    #icons{
+        font-size: 32px;
+    }
+   .works .title::after{
+            color:#0fa5d3;
+            background: #111;
+            font-size: 14px;
+        }
+    .box .projectdes{
+        font-size: 18px;
+    }
+    footer > p{
+        margin-top: -108px;
+        font-size: 15px;
+    }
+    .csocial{
+        padding-top: 20px;
+        font-size: 25px;
+        padding-left: 30px;
+    }
+    .start .start-content #text-1{
+        font-size: 16px;
+        /*font-weight: 600;*/
+        margin-left: -3px;
+    }
+    .start .start-content #text-2{
+        font-size: 40px;
+        /*font-weight: 600;*/
+        margin-left: -3px;
+    }
+    .start .start-content #text-3{
+        font-size: 25px;
+        /*font-weight: 600;*/
+        margin-left: -3px;
+    }
+    .about .max-width .title, h2{
+        font-size: 35px;
+    }
+}
+
 @media (max-width: 338px){
     #icons{
         font-size: 32px;
@@ -527,5 +609,87 @@ section .title::after{
     }
     .about .max-width .title, h2{
         font-size: 35px;
+    }
+}
+
+@media (max-width: 320px){
+    #icons{
+        font-size: 31px;
+    }
+   .works .title::after{
+            color:#0fa5d3;
+            background: #111;
+            font-size: 12px;
+        }
+    .box .projectdes{
+        font-size: 18px;
+    }
+    footer > p{
+        margin-top: -108px;
+        font-size: 15px;
+    }
+    .csocial{
+        padding-top: 20px;
+        font-size: 25px;
+        padding-left: 30px;
+    }
+    .start .start-content #text-1{
+        font-size: 12.4px;
+        /*font-weight: 600;*/
+        margin-left: -3px;
+    }
+    .start .start-content #text-2{
+        font-size: 40px;
+        /*font-weight: 600;*/
+        margin-left: -3px;
+    }
+    .start .start-content #text-3{
+        font-size: 21px;
+        /*font-weight: 600;*/
+        margin-left: -3px;
+    }
+    .about .max-width .title, h2{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 298px){
+    #icons{
+        font-size: 26px;
+    }
+   .works .title::after{
+            color:#0fa5d3;
+            background: #111;
+            font-size: 10px;
+        }
+    .box .projectdes{
+        font-size: 18px;
+    }
+    footer > p{
+        margin-top: -108px;
+        font-size: 15px;
+    }
+    .csocial{
+        padding-top: 20px;
+        font-size: 25px;
+        padding-left: 30px;
+    }
+    .start .start-content #text-1{
+        font-size: 13px;
+        /*font-weight: 600;*/
+        margin-left: -3px;
+    }
+    .start .start-content #text-2{
+        font-size: 42px;
+        /*font-weight: 600;*/
+        margin-left: -3px;
+    }
+    .start .start-content #text-3{
+        font-size: 21px;
+        /*font-weight: 600;*/
+        margin-left: -3px;
+    }
+    .about .max-width .title, h2{
+        font-size: 28px;
     }
 }
