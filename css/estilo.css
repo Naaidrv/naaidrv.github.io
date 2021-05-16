@@ -13,6 +13,7 @@ html{
 /*Barra de Scroll*/
 ::-webkit-scrollbar {
     width: 10px;
+    display: none;
 }
 ::-webkit-scrollbar-track {
     background: #000000;
