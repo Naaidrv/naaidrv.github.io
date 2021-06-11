@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(window).scroll(function(){
-        // sticky navbar on scroll script
+        // Barra de navegación "pegada"
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
         }else{
@@ -15,25 +15,23 @@ $(document).ready(function(){
         }
     });
 
-    // slide-up script
+    // Animación
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
-        // removing smooth scroll on slide-up button click
         $('html').css("scrollBehavior", "auto");
     });
 
     $('.navbar .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
     });
 
-    // toggle menu/navbar script
+    // Efectoen la barra de Navegación
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 
-    // typing text animation script
+    // Animación del textotipo maquina de escribir
     var typed = new Typed(".typing", {
         strings: ["Front-End Jr."],
         typeSpeed: 100,
