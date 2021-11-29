@@ -516,17 +516,17 @@ section .title::after{
         padding-left: 30px;
     }
     .start .start-content #text-1{
-        font-size: 22px;
+        font-size: 20px;
         /*font-weight: 600;*/
         margin-left: -3px;
     }
     .start .start-content #text-2{
-        font-size: 70px;
+        font-size: 65px;
         /*font-weight: 600;*/
         margin-left: -3px;
     }
     .start .start-content #text-3{
-        font-size: 34px;
+        font-size: 26px;
         /*font-weight: 600;*/
         margin-left: -3px;
     }
@@ -567,7 +567,7 @@ section .title::after{
         margin-left: -3px;
     }
     .start .start-content #text-3{
-        font-size: 25px;
+        font-size: 20px;
         /*font-weight: 600;*/
         margin-left: -3px;
     }
