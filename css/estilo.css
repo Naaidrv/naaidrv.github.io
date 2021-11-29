@@ -190,16 +190,16 @@ section .title::after{
     content: "Heey! ✌";
 }
 .about .about-content .left{
-    width: 45%;
+    width: 50%;
 }
 .about .about-content .left img{
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 450px;
     object-fit: cover;
     border-radius: 6px;
 }
 .about .about-content .right{
-    width: 55%;
+    width: 50%;
 }
 .about .about-content .right .text{
     font-size: 25px;
@@ -228,6 +228,11 @@ section .title::after{
     font-size: 40px;
     letter-spacing: 6px;
   }
+
+.img{
+    margin-left: 10px;
+    justify-content: space-between;
+}
 
 .fa-html5 {
     color: rgb(255, 115, 0);

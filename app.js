@@ -33,7 +33,7 @@ $(document).ready(function(){
 
     // Animación del textotipo maquina de escribir
     var typed = new Typed(".typing", {
-        strings: ["Front-End Jr."],
+        strings: ["Front-End Jr.", "Diseñadora UI/UX"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
