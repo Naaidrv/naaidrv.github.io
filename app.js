@@ -62,6 +62,10 @@ $(document).ready(function(){
     });
 });
 
+ScrollReveal().reveal('.text-1');
+ScrollReveal().reveal('.text-2', { delay: 500 });
+ScrollReveal().reveal('.text-3', { delay: 1000 });
+
 window.addEventListener('load', () => {
     const conload = document.querySelector('.conload')
     conload.style.opacity = 0
