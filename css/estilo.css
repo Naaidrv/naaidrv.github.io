@@ -146,6 +146,7 @@ section .title::after{
     background-attachment: fixed;
     font-family: 'Century Gothic', sans-serif;
 }
+
 .start .max-width{
   width: 100%;
   display: flex;
