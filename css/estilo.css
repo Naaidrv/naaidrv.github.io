@@ -495,7 +495,20 @@ section .title::after{
     }
 }
 
+@media (max-width: 768px){
+    .about .about-content .left img{
+        width: 250px;
+        height: 280px;
+    }
+}
+
 @media (max-width: 425px){
+
+    .about .about-content .left img{
+        width: 340px;
+        height: 380px;
+    }
+
     #icons{
         font-size: 40px;
     }
@@ -619,6 +632,11 @@ section .title::after{
 }
 
 @media (max-width: 320px){
+    .about .about-content .left img{
+        width: 300px;
+        height: 250px;
+    }
+
     #icons{
         font-size: 31px;
     }
