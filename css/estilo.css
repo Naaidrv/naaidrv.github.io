@@ -199,6 +199,9 @@ section .title::after{
     object-fit: cover;
     border-radius: 6px;
 }
+
+/*https://xd.adobe.com/view/571cdd5f-adba-49c1-b82c-022e463034c1-024f/*/
+
 .about .about-content .right{
     width: 50%;
 }
