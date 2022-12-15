@@ -22,4 +22,4 @@ _Está página fue creada por NaaidRV. Las imágenes presentadas en este portafo
 * [Contáctame](https://t.me/NaaidRV)
 
 ---
-Hecho con harto amor 😊❤️
+Hecho con harto amor ❤️
