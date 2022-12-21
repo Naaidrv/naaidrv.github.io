@@ -22,7 +22,8 @@ _Está página fue creada por NaaidRV. Las imágenes presentadas en este portafo
 * [Contáctame](https://t.me/NaaidRV)
 
 ---
-Hecho con harto amor 😊❤️
+
+Hecho con harto amor ❤️
 
 <!---
 HAU5-1: https://xd.adobe.com/view/0aad158f-ffc0-445e-9cb7-ce21835a7065-5ffe/
