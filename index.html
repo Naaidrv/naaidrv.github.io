@@ -1,183 +1,671 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Hola! | NRV</title>
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="icon" type="image/x-icon" href="/images/nrv.ico">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <script>
-        ScrollReveal({ reset: true });
-      </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-</head>
-<body>
-    <!--Loader
-    <div class="conload">
-        <div class="loader">
-            <p style="color: white; font-family: 'Poppins', sans-serif; font-size: 40px; margin-top: -20px; margin-left: -100px;">¡Bienvenido!</p>
-        </div>
-    </div>-->
-    <!--Barra de navegación-->
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">Naaid<span>RV</span></a></div>
-            <ul class="menu">
-                <li><a href="#start" class="menu-btn">Inicio</a></li>
-                <li><a href="#about" class="menu-btn">Acerca</a></li>
-                <li><a href="#works" class="menu-btn">Trabajos</a></li>
-                <li><a href="#contact" class="menu-btn">Contacto</a></li>
-                <li><a href="indexe.html" class="menu-btn">EN <i class="fas fa-globe-americas"></i> </a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Banner e inicio -->
-    <section class="start" id="start">
-      <div class="max-width">
-          <div class="row">
-            <div class="start-content">
-                <div id="text-1" class="text-1">¡Hola soy Nadia!, pero tu dime</div>
-                <div id="text-2" class="text-2">Naaid RV</div>
-                <div id="text-3" class="text-3">& soy <span class="typing"></span></div>
-                <!--<a href="#about">¡Conoceme!</a>-->
-            </div>
-          </div>
-      </div>
-    </section>
-    <!--Sección Acerca de Mí-->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">Acerca de mi</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="images/himg.png" alt="">
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="/assets/img/nrv.ico" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>        
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+        
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title> ¡Hola! | NRV</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#home" class="nav__logo">
+                    NaaidRV
+                </a>
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home' ></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bx-user'></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class='bx bx-book'></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link">
+                                <i class='bx bx-briefcase'></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class='bx bx-message-square-dots'></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="column right">
-                    <div class="text">Hola, soy NaaidRV <!--<span class="typing-2"></span>--></div>
-                    <p id="text1">Cuento con experiencia como <strong>Front End Developer</strong> y 
-                        <strong> creadora de contenido multimedia</strong>, utilizando herramientas y tecnologias como <strong>HTML, PHP, CSS, GitHub,
-                            Javascript, Bootstrap, Node Js, Google Apps Script, MySQL, Figma, Photoshop & After Effects.</strong><br>
-                    </p>
-                        <div id="icons">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-github"></i>
-                            <i class="fab fa-js"></i>
-                            <i class="fab fa-bootstrap"></i>
-                    </div>
-                    <p id="text1"> Actualmente estoy aprendiendo desarrollo de aplicaciones móviles con <strong>Dart - Flutter</strong> y <strong>Firebase. 😁</p></strong>
-                        <div id="icons-mobile">
-                            <img class="img" src="images/dart.png" width="35px" height="50px" style="padding-top: 12px;"> 
-                            <img class="img" src="images/flutter-icon.png" width="35px" height="34px">
-                            <img class="img" src="images/firebase-icon.png" width="30px" height="35px">
+            <!--=============== THEME ===============-->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__greeting">¡Hola soy Nadia!, pero tu dime</span>
+                        <h1 class="home__name">NaaidRV</h1>
+                        <h3 class="home__education">& soy
+                            <span class="typing"></span>
+                        </h3>
+                        <div class="home__buttons">
+                            <a href="assets/pdf/NadiaRV-CV.pdf" target="_blank" class="button button--ghost">
+                                Descargar CV
+                            </a>
+                            <a href="#about" class="button">Acerca de mi</a>
                         </div>
-                            <p id="text3">
-                                Amante de la música, diseño, programación, comida, fútbol y los perritos.</p>
-                    <a href="images/CV-NadiaRV.pdf"  target="_blank">Mi CV</a>
+                    </div>
+                    <div class="home__handle">
+                        <img src="/assets/img/perfil.png" alt="" class="home__img">
+                    </div>
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/nadiariv/" target="_blank" class="home__social-link">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="https://github.com/Naaidrv" target="_blank" class="home__social-link">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="https://www.instagram.com/naaidrv/" target="_blank" class="home__social-link">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                    </div>
+                    <a href="#about" class="home__scroll">
+                        <i class='bx bx-chevrons-down home__scroll-icon'></i>
+                        <spna class="home__scroll-name">Scroll down</spna>
+                    </a>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
+            
+            <!--=============== ABOUT ===============-->
+            <section class="about section" id="about">
+                <span class="section__subtitle">Heey! ✌</span>
+                <h2 class="section__title">Acerca de mi</h2>
 
-    <!--Sección trabajos-->
-    <section class="works" id="works">
-        <div class="max-width">
-            <h2 class="title">Trabajos</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <div class="box">
-                        <img src="images/proy1.2.png" alt="">
-                        <div class="text">PC Service & Restore</div>
-                        <p class="projectdes">Diseño del hosting y login para un café internet, dandole al usuario la información de costo por tiempo.</p>
+                <div class="about__container container grid">
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                    <div class="about__data">
+                        <!--<div class="about__info">
+                            <div class="about__box">
+                                <i class="fi fi-sr-graduation-cap about__icon"></i>
+                                <h3 class="about__title">Egresada</h3>
+                                <span class="about__subtitle">2 años trabajando</span>
+                            </div>
+
+                            <div class="about__box">
+                                <i class="fi fi-sr-briefcase about__icon"></i>
+                                <h3 class="about__title">+5 proyectos</h3>
+                                <span class="about__subtitle">Completados</span>
+                            </div>
+
+                            <div class="about__box">
+                                <i class="bx bx-code-block about__icon"></i>
+                                <h3 class="about__title">Aprendiendo</h3>
+                                <span class="about__subtitle">Siempre algo nuevo</span>
+                            </div>
+                        </div>-->
+                        <p class="about__description">
+                            Cuento con experiencia como Front End Developer y creadora de contenido multimedia, 
+                            utilizando herramientas y tecnologias como <strong style="color:#00afd6">HTML, PHP, CSS, GitHub, Javascript, Bootstrap, 
+                                Node Js, Google Apps Script, MySQL, Figma, Photoshop & After Effects</strong>.
+                            <br><br>
+                            Actualmente estoy aprendiendo desarrollo de aplicaciones móviles con <strong style="color:#00afd6">Dart - Flutter y Firebase</strong>.
+                            <br><br>
+                            Amante de la música, diseño, programación, comida, fútbol y los perritos.
+                        </p>
+
+                        <a href="#contact" class="button">Escríbeme</a>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/proy2.0.png" alt="">
-                        <div class="text">Consultorio Médico Pediátrico</div>
-                        <p class="projectdes">Página para consultorio pediátrico, agilizando el registro de consultas, horarios y especializaciones.</p>
+            </section>
+
+            <!--=============== SKILLS ===============-->
+            <section class="skills section" id="skills">
+                <span class="section__subtitle">Mis Habilidades 🤓</span>
+                <h2 class="section__title">Tecnologias & Herramientas</h2>
+
+                <div class="skills__container container grid">
+                    <div class="skills__content">
+                        <h3 class="skills__title">
+                            Frontend Developer
+                        </h3>
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="fi fi-sr-badge-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>  
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fi fi-sr-badge-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>  
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fi fi-sr-badge-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Javascript</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>  
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fi fi-sr-badge-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">API's</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>  
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="fi fi-sr-badge-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Bootstrap</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>  
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fi fi-sr-badge-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Git</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>  
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fi fi-sr-badge-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Angular</h3>
+                                        <span class="skills__level">Basico</span>
+                                    </div>  
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fi fi-sr-badge-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">React</h3>
+                                        <span class="skills__level">Aprendiendo</span>
+                                    </div>  
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__content">
+                        <h3 class="skills__title">
+                            Backend Developer
+                        </h3>
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="fi fi-sr-badge-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">PHP</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>  
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fi fi-sr-badge-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Node</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>  
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fi fi-sr-badge-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">MySQL</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>  
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fi fi-sr-badge-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">SQL Server</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>  
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="fi fi-sr-badge-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Firebase</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>  
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fi fi-sr-badge-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Mongo DB</h3>
+                                        <span class="skills__level">Basico</span>
+                                    </div>  
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fi fi-sr-badge-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Dart</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>  
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="fi fi-sr-badge-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Flutter</h3>
+                                        <span class="skills__level">Basico</span>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/Proy4.2.gif" alt="">
-                        <div class="text">Vídeo - Ciudad Virtual</div>
-                        <p class="projectdes">Vídeo 8vo. Congreso de Informática de la FESC 
+            </section>
+
+            <!--=============== SERVICES ===============-->
+            <!--<section class="services section">
+                <span class="section__subtitle">My services</span>
+                <h2 class="section__title">What I Offer</h2>
+
+                <div class="services__container container grid">
+                    <div class="services__card">
+                        <h3 class="services__title">Product <br> Designer</h3>
+                        <span class="services__button">
+                            See more <i class='bx bx-right-arrow-alt services__icon'></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="fi fi-br-cross services__modal-close"></i>
+                            
+                                <h3 class="services__modal-title">Product Designer</h3>
+                                <p class="services__modal-description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, aliquid!
+                                </p>
+
+                                <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class="fi fi-br-check services__modal-icon"></i>
+                                        <p class="services__modal-info">
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class="fi fi-br-check services__modal-icon"></i>
+                                        <p class="services__modal-info">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class="fi fi-br-check services__modal-icon"></i>
+                                        <p class="services__modal-info">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class="fi fi-br-check services__modal-icon"></i>
+                                        <p class="services__modal-info">
+                                            Lorem ipsum dolor sit amet consectetur.
+                                        </p>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services__card">
+                        <h3 class="services__title">Web <br> Designer</h3>
+                        <span class="services__button">
+                            See more <i class='bx bx-right-arrow-alt services__icon'></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="fi fi-br-cross services__modal-close"></i>
+                            
+                                <h3 class="services__modal-title">Product Designer</h3>
+                                <p class="services__modal-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Possimus vitae corporis quisquam vero esse beatae repellendus 
+                                    quas totam aut commodi.
+                                </p>
+
+                                <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class="fi fi-br-check services__modal-icon"></i>
+                                        <p class="services__modal-info">
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class="fi fi-br-check services__modal-icon"></i>
+                                        <p class="services__modal-info">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class="fi fi-br-check services__modal-icon"></i>
+                                        <p class="services__modal-info">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class="fi fi-br-check services__modal-icon"></i>
+                                        <p class="services__modal-info">
+                                            Lorem ipsum dolor sit amet consectetur.
+                                        </p>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services__card">
+                        <h3 class="services__title">Responsive <br> Design</h3>
+                        <span class="services__button">
+                            See more <i class='bx bx-right-arrow-alt services__icon'></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="fi fi-br-cross services__modal-close"></i>
+                            
+                                <h3 class="services__modal-title">Product Designer</h3>
+                                <p class="services__modal-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eos.
+                                </p>
+
+                                <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class="fi fi-br-check services__modal-icon"></i>
+                                        <p class="services__modal-info">
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class="fi fi-br-check services__modal-icon"></i>
+                                        <p class="services__modal-info">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class="fi fi-br-check services__modal-icon"></i>
+                                        <p class="services__modal-info">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                                        </p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class="fi fi-br-check services__modal-icon"></i>
+                                        <p class="services__modal-info">
+                                            Lorem ipsum dolor sit amet consectetur.
+                                        </p>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </section>-->
+
+            <!--=============== WORK ===============-->
+            <section class="work section" id="work">
+                <span class="section__subtitle">Mi Portafolio 💼</span>
+                <h2 class="section__title">Trabajos recientes</h2>
+
+                <div class="work__filters">
+                    <span class="work__item active-work" data-filter="all">Todos</span>
+                    <span class="work__item" data-filter=".webdev">Web</span>
+                    <span class="work__item" data-filter=".webdes">Diseños</span>
+                    <span class="work__item" data-filter=".mobile">Apps</span>
+                </div>
+
+                <div class="work__container container grid">
+                    <div class="work__card mix webdes">
+                        <img src="/assets/img/proy7.jpg" alt="" class="work__img">
+                        <h3 class="work__title">Marvel SuperHero UI</h3>
+                        <p>Diseño UI para descubrir más de todo el UCM, para ver la imagen completa echo con <strong>Adobe XD & Photoshop</strong></p> <br>
+                        <a href="http://drive.google.com/uc?export=view&id=1kWuHd44CNPhgSYMduYffoq5mtMfTOnuE" target="_blank" class="work__button">Ver <i class='bx bx-right-arrow-alt work__icon'></i></a>
+                    </div>
+
+                    <div class="work__card mix webdes">
+                        <img src="/assets/img/proy8.jpg" alt="" class="work__img">
+                        <h3 class="work__title">Hora de Aventura UI</h3>
+                        <p>Diseño UI de Hora de aventura, con los mejores amigos, echo con <strong>Adobe XD & Figma</strong></p> <br>
+                        <a href="http://drive.google.com/uc?export=view&id=1cYbxcrUPiNZLWpXXRh6yzDVzjmNL5FaO" target="_blank" class="work__button">Ver <i class='bx bx-right-arrow-alt work__icon'></i></a>
+                    </div>
+
+                    <div class="work__card mix webdes">
+                        <img src="/assets/img/Proy4.2.gif" alt="" class="work__img">
+                        <h3 class="work__title">Vídeo - Ciudad Virtual</h3>
+                        <p>Vídeo 8vo. Congreso de Informática de la FESC 
                             se dió a conocer<strong> "Ciudad Virtual"</strong> plataforma para la comunidad UNAM.</p>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/proy3.2.gif"  alt="">
-                        <div class="text">Vídeo - (ADDSWN)</div>
-                        <p class="projectdes">Vídeo para estudiantes del diplomado <strong>"Análisis, diseño y desarrollo de sitios web en los negocios"</strong> de la FESC.</p>
+
+                    <div class="work__card mix webdes">
+                        <img src="/assets/img/proy3.2.gif" alt="" class="work__img">
+                        <h3 class="work__title">Vídeo (ADDSWN)</h3>
+                        <p>Vídeo para estudiantes del diplomado <strong>"Análisis, diseño y desarrollo de sitios web en los negocios"</strong> de la FESC.</p>
+                    </div>
+
+                    <div class="work__card mix webdev">
+                        <img src="/assets/img/proy1.2.png" alt="" class="work__img">
+                        <h3 class="work__title">PC Service & Restore</h3>
+                        <p>Diseño del hosting y login para un café internet, dandole al usuario la información de costo por tiempo.</p>
+                    </div>
+
+                    <div class="work__card mix webdev">
+                        <img src="/assets/img/proy2.0.png" alt="" class="work__img">
+                        <h3 class="work__title">Consultorio Médico Pediátrico</h3>
+                        <p>Página para consultorio pediátrico, agilizando el registro de consultas, horarios y especializaciones.</p> <br>
+                        <a href="https://pediatric-medical.vercel.app" class="work__button">Ver sitio <i class='bx bx-right-arrow-alt work__icon'></i></a>
+                    </div>
+
+                    <div class="work__card mix webdev">
+                        <img src="/assets/img/TrendingM.png" alt="" class="work__img">
+                        <h3 class="work__title">Trending Movies</h3>
+                        <p>Página para ver las peliculas que estan en tendencia divididas en categorias, con sinopsis y algunos trailers disponibles.</p> <br>
+                        <a href="https://naaidrv.github.io/MoviePage/" class="work__button">Ver sitio <i class='bx bx-right-arrow-alt work__icon'></i></a>
+                    </div>
+
+                    <div class="work__card mix mobile">
+                        <img src="/assets/img/proy5.2.png" alt="" class="work__img">
+                        <h3 class="work__title">Login - Flutter & Firebase</h3>
+                        <p>Estos son mis primeros pasos en el mundo de desarrollo de aplicaciones móviles con <strong>Dart - Flutter y Firebase.</strong></p> <br>
+                        <a href="https://github.com/Naaidrv/loginform" target="_blank" class="work__button">Ver repositorio <i class='bx bx-right-arrow-alt work__icon'></i></a>
+                    </div>
+
+                    <div class="work__card mix mobile">
+                        <img src="/assets/img/proy6.2.png" alt="" class="work__img">
+                        <h3 class="work__title">QuizzApp - Flutter</h3>
+                        <p>¿Qué tanto sabes de cultura general?, Descúbrelo con 20 preguntas 😁 echo con <strong>Dart - Flutter.</strong></p> <br>
+                        <a href="https://github.com/Naaidrv/QuizzAppFlutter" target="_blank" class="work__button">Ver repositorio <i class='bx bx-right-arrow-alt work__icon'></i></a>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/proy5.2.png" alt="">
-                        <div class="text">Login - Flutter & Firebase</div>
-                        <p class="projectdes">Estos son mis primeros pasos en el mundo de desarrollo de aplicaciones móviles con <strong>Dart - Flutter y Firebase.</strong></p>
+            </section>
+
+            <!--=============== TESTIMONIALS ===============-->
+            <!--<section class="testimonial section">
+                <span class="section__subtitle">My clients say</span>
+                <h2 class="section__title">testimonial</h2>
+
+                <div class="testimonial__container container swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <img src="/assets/img/testimonial1.png" alt="" class="testimonial__img">
+                            <h3 class="testimonial__name">John Doe</h3>
+                            <p class="testimonial__description">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Mollitia tenetur reprehenderit porro?
+                            </p>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <img src="/assets/img/testimonial2.png" alt="" class="testimonial__img">
+                            <h3 class="testimonial__name">Karla Smith</h3>
+                            <p class="testimonial__description">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Mollitia tenetur reprehenderit porro?
+                            </p>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <img src="/assets/img/testimonial3.png" alt="" class="testimonial__img">
+                            <h3 class="testimonial__name">Wanda Maximoff</h3>
+                            <p class="testimonial__description">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Mollitia tenetur reprehenderit porro?
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>-->
+
+            <!--=============== CONTACT ===============-->
+            <section class="contact section" id="contact">
+                <span class="section__subtitle">¿Te interesa mi trabajo? 🤝</span>
+                <h2 class="section__title">Contacto</h2>
+
+                <div class="contact__container container grid">
+                    <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="fi fi-br-envelope contact__card-icon"></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">
+                                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=naaidvelazquez@gmail.com" target="_blank" class="contact__button">
+                                    naaidvelazquez@gmail.com <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                                </a>
+                            </span>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-telegram contact__card-icon'></i>
+                            <h3 class="contact__card-title">Telegram</h3>
+                            <span class="contact__card-data">
+                                <a href="https://t.me/NaaidRV" target="_blank" class="contact__button">
+                                    NaaidRV <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                                </a>
+                            </span>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class="bx bxl-linkedin contact__card-icon"></i>
+                            <h3 class="contact__card-title">LinkedIn</h3>
+                            <span class="contact__card-data">
+                                <a href="https://www.linkedin.com/in/nadiariv/" target="_blank" class="contact__button">
+                                    Nadia Rivera Velazquez <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                                </a>
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/proy6.2.png" alt="">
-                        <div class="text">QuizzApp - Flutter</div>
-                        <p class="projectdes">¿Qué tanto sabes de cultura general?, Descúbrelo con 20 preguntas 😁 echo con <strong>Dart - Flutter.</strong></p>
-                    </div>
+
+                <!--<div class="container__content">
+                        <h3 class="contact__title">Write me your project</h3>
+                        
+                        <form action="" class="contact__form">
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Names</label>
+                                <input type="text" placeholder="Insert your name" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Mail</label>
+                                <input type="text" placeholder="Insert your email" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-div contact__form-area">
+                                <label for="" class="contact__form-tag">Project</label>
+                                <textarea name="" id="" cols="30" rows="10" 
+                                placeholder="Write your project"
+                                class="contact__form-input"></textarea>
+                            </div>
+                            <button class="button">Send message</button>
+                        </form>
+                    </div>-->
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/proy7.jpg" alt="">
-                        <div class="text"> Marvel SuperHero UI</div>
-                        <p class="projectdes">Diseño UI para descubrir más de todo el UCM, para ver la imagen completa <a href="http://drive.google.com/uc?export=view&id=1kWuHd44CNPhgSYMduYffoq5mtMfTOnuE" target="_blank">Haz clic aquí</a> echo con <strong>Adobe XD & Photoshop</strong></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/proy8.jpg" alt="">
-                        <div class="text"> Hora de Aventura UI</div>
-                        <p class="projectdes">Diseño UI de Hora de aventura, con los mejores amigos, para ver la imagen completa <a href="http://drive.google.com/uc?export=view&id=1cYbxcrUPiNZLWpXXRh6yzDVzjmNL5FaO" target="_blank">Haz clic aquí</a> echo con <strong>Adobe XD & Figma</strong></p>
-                    </div>
-                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">NaaidRV</h1>
+                <ul class="footer__list">
+                    <li><a href="#home" class="footer__link">Ir arriba</a></li>
+                    <li><a href="#about" class="footer__link">Acerca</a></li>
+                    <li><a href="#work" class="footer__link">Portafolio</a></li>
+                </ul>
+
+                <!--<ul class="footer__social">
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook-square'></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram-alt'></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </ul>-->
+                <span class="footer__copy">
+                    &#169; Naaidrv All rights reserved December 2022
+                </span>
             </div>
-        </div>
-    </section>
-    <!--Bloque de Contacto-->
-    <section class="contact" id="contact" style="height: 10px;">
-    <div id="social" style="margin-top: -60px;">
-     <h2 class="title">Contacto</h2>
-   <div class="col-24-p">
-   <div class="csocial">
-   <a href="https://mail.google.com/mail/u/0/?view=cm&amp;fs=1&amp;tf=1&amp;source=mailto&amp;to=naaidvelazquez@gmail.com" target="_blank" rel="nofollow noopener" title="Enviar correo"><i class="fas fa-envelope" style="color: black;"></i></a>
-   <a title="Sigue mis proyectos 🚧✔️" class="footer__link" href="https://github.com/Naaidrv" target="_blank"><i class="fab fa-github"></i></a>
-   <a title="Envíame un Telegram!✈️✌️" class="footer__link" href="https://t.me/NaaidRV" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-   <a title="Perfil profesional👔😎" class="footer__link" href="https://linkedin.com/in/nadiariv" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-   </div>
-   </div>
-    </div>
-</section>
-   
-   <footer>
-   <p>Si te gusta mi trabajo y te interesa ¡Contáctame!</p>
-   </footer>
-   </div>
+        </footer>
 
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="/assets/js/scrollreveal.min.js"></script>
 
-    <script src="app.js"></script>
-   
-</body>
+        <!--=============== SWIPER JS ===============-->
+        <script src="/assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MIXITUP FILTER ===============-->
+        <script src="/assets/js/mixitup.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="/assets/js/main.js"></script>
+    </body>
 </html>
-
