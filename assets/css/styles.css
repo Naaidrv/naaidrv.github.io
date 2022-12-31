@@ -1001,7 +1001,7 @@ body.light-theme{
   }
 
   .contact__info{
-    grid-template-columns: 800px;
+    grid-template-columns: 900px;
     justify-content: center;
   }
 
