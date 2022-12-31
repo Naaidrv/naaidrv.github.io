@@ -997,7 +997,7 @@ body.light-theme{
 
   .work__card p{
     text-align: justify; 
-    width: 600px;
+    width: 300px;
   }
 
   .contact__info{
@@ -1014,6 +1014,11 @@ body.light-theme{
 @media screen and (min-width:767px){
   .work__container{
     grid-template-columns: repeat(2, max-content);
+  }
+
+  .work__card p{
+    text-align: justify; 
+    width: 300px;
   }
 
   .contact__container{
