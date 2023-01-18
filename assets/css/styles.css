@@ -119,6 +119,17 @@ img {
   color: var(--first-color);
 }
 
+.translate-icon{
+  cursor: pointer;
+  transition: .3s;
+  color: #bebac4;
+  font-size: 1.25rem;
+}
+
+.translate-icon:hover{
+  color: var(--first-color);
+}
+
 /*========== Variables Dark theme ==========*/
 body.light-theme{
   --title-color: hsl(var(--second-hue), 15%, 15%);
@@ -239,9 +250,9 @@ body.light-theme{
 
 .nav{
   height: var(--header-height);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav__logo{
