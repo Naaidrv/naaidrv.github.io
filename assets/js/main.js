@@ -21,6 +21,7 @@ function toggleTheme() {
 
 // Main initialization
 document.addEventListener("DOMContentLoaded", function() {
+
     // Initialize theme
     const theme = getPreferredTheme();
     document.documentElement.setAttribute('data-theme', theme);
@@ -100,6 +101,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+        // Ejecutar cuando se haga scroll o se cambie el tamaño de la ventana
+window.addEventListener("scroll", updateActiveNav);
+window.addEventListener("resize", updateActiveNav);
+
+// Ejecutar una vez al cargar la página para marcar correctamente la sección activa
+updateActiveNav();
             // MixItUp Configuration
     let mixer = null;
 
