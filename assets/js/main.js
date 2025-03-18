@@ -19,6 +19,12 @@ function toggleTheme() {
     updateThemeIcon(newTheme);
 }
 
+ScrollReveal().reveal('.about-section', { delay: 500 });
+ScrollReveal().reveal('.skills-section', { delay: 500 });
+ScrollReveal().reveal('.portfolio-section-desk', { delay: 500 });
+ScrollReveal().reveal('.portfolio-section-mobile', { delay: 500 });
+ScrollReveal().reveal('.contact-seccion', { delay: 500 });
+
 // Main initialization
 document.addEventListener("DOMContentLoaded", function() {
 
